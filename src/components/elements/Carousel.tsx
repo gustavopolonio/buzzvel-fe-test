@@ -38,7 +38,7 @@ export function Carousel({
           {slides.map((slide) => (
             <div
               key={slide.author.name}
-              className="w-[94%] flex-shrink-0 flex flex-col bg-white rounded-lg pt-28 pb-8 px-8 space-y-8 h-fit"
+              className="w-[94%] flex-shrink-0 flex flex-col bg-white rounded-lg pt-28 pb-8 px-8 space-y-8 h-fit shadow-image"
             >
               <p className="text-start h-44">{slide.content}</p>
               <div className="flex items-center gap-2">
