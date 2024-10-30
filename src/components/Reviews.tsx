@@ -47,17 +47,21 @@ export function Reviews() {
   ];
 
   return (
-    <section className="py-12 text-center flex flex-col items-center bg-purple-900">
-      <span className="padded text-amber-300 font-medium">Join other Sun harvesters</span>
-      <h2 className="padded text-white mt-2 font-bold text-[32px] leading-9">Make something awesome</h2>
-      <p className="padded my-6 text-white">
-        Pretium lectus ultrices sit tempor, sit ullamcorper volutpat et et. Auctor turpis
-        semper id sit ornare maecenas lectus sed.
-      </p>
-      <Button>
-        Request a Quote
-        <ArrowRight />
-      </Button>
+    <section className="py-12 flex flex-col bg-purple-900">
+      <div className="padded md:flex md:items-center md:gap-6">
+        <div className="flex flex-col items-center text-center md:items-start md:text-start">
+          <span className="text-amber-300 font-medium lg:text-xl">Join other Sun harvesters</span>
+          <h2 className="text-white mt-2 font-bold text-[32px] leading-9 lg:text-[56px] lg:leading-[60px] lg:font-extrabold">Make something awesome</h2>
+          <p className="my-6 text-white sm:w-[80%] lg:text-xl">
+            Pretium lectus ultrices sit tempor, sit ullamcorper volutpat et et. Auctor turpis
+            semper id sit ornare maecenas lectus sed.
+          </p>
+        </div>
+        <Button className="mx-auto md:flex-shrink-0">
+          Request a Quote
+          <ArrowRight />
+        </Button>
+      </div>
       <Carousel slides={slidesData} />
     </section>
   );
