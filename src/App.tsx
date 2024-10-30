@@ -6,6 +6,7 @@ import { Reviews } from './components/Reviews';
 import { Section1 } from './components/Section1';
 import { Section2 } from './components/Section2';
 import { Section3 } from './components/Section3';
+import { Section4 } from './components/Section4';
 
 export function App() {
   return (
@@ -16,6 +17,7 @@ export function App() {
       <Section2 />
       <Section3 />
       <Reviews />
+      <Section4 />
     </div>
   );
 }
