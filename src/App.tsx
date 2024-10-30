@@ -1,5 +1,4 @@
-// eslint
-
+import { Footer } from './components/Footer';
 import { Header } from './components/Header';
 import { Hero } from './components/Hero';
 import { Reviews } from './components/Reviews';
@@ -10,7 +9,7 @@ import { Section4 } from './components/Section4';
 
 export function App() {
   return (
-    <div>
+    <>
       <Header />
       <Hero />
       <Section1 />
@@ -18,6 +17,7 @@ export function App() {
       <Section3 />
       <Reviews />
       <Section4 />
-    </div>
+      <Footer />
+    </>
   );
 }
