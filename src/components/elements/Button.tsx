@@ -15,15 +15,20 @@ const buttonVariants = tv({
 });
 
 interface ButtonProps extends ComponentProps<'button'>, VariantProps<typeof buttonVariants> {
+  rounded?: boolean
   children: ReactNode
 }
 
 export function Button({
   children,
   variant,
+  rounded = false,
   ...props
 }: ButtonProps) {
+  const classNames = props.className || '';
+  const isRounded = rounded ? 'p-4 rounded-full' : '';
+
   return (
-    <button type="button" {...props} className={buttonVariants({ variant })}>{children}</button>
+    <button type="button" {...props} className={buttonVariants({ variant, class: `${isRounded} ${classNames}` })}>{children}</button>
   );
 }

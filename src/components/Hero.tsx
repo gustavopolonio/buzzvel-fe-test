@@ -3,7 +3,7 @@ import { Button } from './elements/Button';
 
 export function Hero() {
   return (
-    <div className="mt-[310px] py-12 space-y-16">
+    <div className="padded mt-[310px] py-12 space-y-16">
       <div className="space-y-6 text-center flex flex-col items-center">
         <h1 className="font-bold text-[40px] leading-[44px]">Get the Sun to Power Your Home</h1>
         <p className="text-lg">

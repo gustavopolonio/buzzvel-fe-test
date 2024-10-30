@@ -5,3 +5,10 @@
 * {
   min-width: 0;
 }
+
+@layer utilities {
+  .padded {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
