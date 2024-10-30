@@ -39,9 +39,9 @@ export function Section2() {
           </li>
         </ul>
       </div>
-      <img className="absolute -left-6 -z-10" src="/images/mobile/feature2-rectangle.png" alt="" />
+      <img className="absolute -left-6 -z-10" src="/images/feature2-rectangle.png" alt="" />
       <div className="w-[220px] mt-16 mx-auto md:mt-0 md:-order-1 md:shrink-0 md:padded lg:w-[360px]">
-        <img className="w-full shadow-image md:static" src="/images/mobile/feature2.png" alt="Smartphone design" />
+        <img className="w-full shadow-image md:static" src="/images/feature2.png" alt="Smartphone design" />
       </div>
     </section>
   );

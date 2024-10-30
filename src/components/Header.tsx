@@ -34,7 +34,7 @@ export function Header() {
         </Button>
       </div>
 
-      <img className="absolute top-0 right-0 -z-10 lg:w-[715px]" src="/images/mobile/hero-background.png" alt="Man installing solar panel" />
+      <img className="absolute top-0 right-0 -z-10 lg:w-[715px]" src="/images/hero-background.png" alt="Man installing solar panel" />
     </header>
   );
 }

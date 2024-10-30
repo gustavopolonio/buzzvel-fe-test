@@ -22,7 +22,7 @@ export function Hero() {
           orci dui consequat turpis scelerisque faucibus.”
         </span>
         <div className="flex items-center gap-4">
-          <img src="/images/mobile/customer1.png" alt="Rwanda Melflor" />
+          <img src="/images/customer1.png" alt="Rwanda Melflor" />
           <div className="flex flex-col">
             <span className="text-lg">Rwanda Melflor</span>
             <span className="text-slate-600">zerowaste.com</span>

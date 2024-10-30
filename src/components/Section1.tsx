@@ -8,9 +8,9 @@ export function Section1() {
         turpis pulvinar purus maecenas quam a. Erat porttitor pharetra sed in mauris
         elementum sollicitudin.
       </p>
-      <img className="absolute left-0 -z-10 sm:w-[24%]" src="/images/mobile/feature1-left-circle.png" alt="" />
-      <img className="absolute right-0 -z-10 sm:w-[10%]" src="/images/mobile/feature1-right-circle.png" alt="" />
-      <img className="absolute bottom-12 right-0 w-[358px] shadow-image sm:static sm:mx-auto sm:mt-16 sm:w-[80%] sm:max-w-screen-2xl" src="/images/mobile/feature1.png" alt="Dashboard design" />
+      <img className="absolute left-0 -z-10 sm:w-[24%]" src="/images/feature1-left-circle.png" alt="" />
+      <img className="absolute right-0 -z-10 sm:w-[10%]" src="/images/feature1-right-circle.png" alt="" />
+      <img className="absolute bottom-12 right-0 w-[358px] shadow-image sm:static sm:mx-auto sm:mt-16 sm:w-[80%] sm:max-w-screen-2xl" src="/images/feature1.png" alt="Dashboard design" />
     </section>
   );
 }
