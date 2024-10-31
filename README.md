@@ -1,50 +1,54 @@
-# React + TypeScript + Vite
+# Buzzvel Dev Team Test
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p align="center">
+   <img src="https://github.com/gustavopolonio/buzzvel-fe-test/blob/master/.github/web.png" width="760"/>
+</p>
 
-Currently, two official plugins are available:
+# :pushpin: Table of Contents
+* [About this Project](#book-about-this-project)
+* [How to Use](#construction_worker-how-to-use)
+* [Technologies](#computer-technologies)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# :book: About this Project
 
-## Expanding the ESLint configuration
+This project is a developer test for the company [Buzzvel](https://buzzvel.com/). It consists of converting the Figma designs provided into fully functional web/mobile pages using React. It's the website of Soller, a company that offers complete solar energy solutions for homes.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+The requirements include ensure the design is fully responsive and looks good on all screen sizes, animations to enhance the user experience, SEO optimization and a high performance result.
 
-- Configure the top-level `parserOptions` property like this:
+I used approaches like: lazy loading images, SEO optimization with react helmet and mobile first.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+Live link: [https://buzzvel-fe-test-five.vercel.app/](https://buzzvel-fe-test-five.vercel.app/)
+
+# :construction_worker: How to Use
+
+Before starting, you need to have installed in your machine: [Node](https://nodejs.org/en/download/), [npm](https://www.npmjs.com/) (or other package manager), [Git](https://git-scm.com/) 
+and a code editor (I use [VSCode](https://code.visualstudio.com/)).
+
+```bash
+
+# Clone this repository via HTTPS:
+$ git clone https://github.com/gustavopolonio/buzzvel-fe-test.git
+
+# Go into the project:
+$ cd buzzvel-fe-test
+
+# Install dependencies:
+$ npm install
+
+# Run the project on development env:
+$ npm run dev
+
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+# :computer: Technologies
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+* [Vercel](https://vercel.com/) for frontend deploy
+* Vite + React + Typescript
+* Tailwind
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+---
+
+Made with :green_heart: by [Gustavo Polonio](https://github.com/gustavopolonio) 🚀
+
+[![Linkedin Badge](https://img.shields.io/badge/-Gustavo-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/gustavo-polonio-04b77a169/)](https://www.linkedin.com/in/gustavo-polonio-04b77a169/)
+[![Gmail Badge](https://img.shields.io/badge/-gustavopolonio1@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:gustavopolonio1@gmail.com)](mailto:gustavopolonio1@gmail.com)
