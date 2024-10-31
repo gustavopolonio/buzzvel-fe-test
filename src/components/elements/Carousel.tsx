@@ -22,9 +22,9 @@ export function Carousel({
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
   useEffect(() => {
-    const handleResize = () => {
+    function handleResize() {
       setScreenWidth(window.innerWidth);
-    };
+    }
 
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
@@ -61,6 +61,9 @@ export function Carousel({
                 <img
                   src={slide.author.avatarUrl}
                   alt={slide.author.name}
+                  loading="lazy"
+                  width="64"
+                  height="64"
                 />
                 <div className="flex flex-col items-start">
                   <span>{slide.author.name}</span>

@@ -18,7 +18,12 @@ export function Section4() {
         </div>
       </div>
       <div className="z-10 mt-16 sm:w-[80%] sm:max-w-4xl">
-        <img className="w-full" src="/images/macbook.png" alt="Mackbook" />
+        <img
+          className="w-full h-auto"
+          src="/images/macbook.png"
+          alt="Mackbook"
+          loading="lazy"
+        />
       </div>
       <img className="absolute left-0 bottom-0 z-0 md:right-0 md:top-0 md:left-auto md:rotate-180" src="/images/feature4-circle.png" alt="" />
     </section>
