@@ -2,7 +2,7 @@ import { ComponentProps, ReactNode } from 'react';
 import { tv, VariantProps } from 'tailwind-variants';
 
 const buttonVariants = tv({
-  base: 'text-2xl leading-6 font-bold rounded-full flex items-center justify-center gap-6 pl-12 pr-6 py-5 border-2',
+  base: 'text-2xl leading-6 font-bold rounded-full flex items-center justify-center gap-6 pl-12 pr-6 py-5 border-2 transition duration-300 ease-in-out',
   variants: {
     variant: {
       primary: 'text-amber-300 bg-transparent border-amber-300 enabled:hover:bg-amber-300 enabled:hover:text-amber-900 enabled:hover:drop-shadow-lg',
@@ -29,6 +29,12 @@ export function Button({
   const isRounded = rounded ? 'p-4 rounded-full' : '';
 
   return (
-    <button type="button" {...props} className={buttonVariants({ variant, class: `${isRounded} ${classNames}` })}>{children}</button>
+    <button
+      type="button"
+      {...props}
+      className={buttonVariants({ variant, class: `${isRounded} ${classNames}` })}
+    >
+      {children}
+    </button>
   );
 }
